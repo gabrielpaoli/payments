@@ -1,0 +1,7 @@
+dashboard.content:
+  path: '/dashboard_admin'
+  defaults:
+    _controller: '\Drupal\dashboard\Controller\DashboardController::content'
+    _title: 'Dashboard'
+  requirements:
+    _permission: 'access content'
