@@ -1,2 +1,12 @@
 
-<p>test_var: {{ dump(test_var[3]) }}</p>
+
+<div>
+    {% for payment in payments %}
+        <div>{{ payment.field_user.value.0.target_id }}</div>
+        <div>{{ payment.field_pending.value }}</div>
+        <div>{{ payment.field_date_of.value }}</div>
+        <div>{{ payment.field_dues_per_month.value }}</div>
+        <div>{{ payment.field_total_due.value }}</div>
+        <div>{{ payment.field_paid_to_date.value }}</div>
+    {% endfor %}
+</div>
